@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     background: url("src/img/background.png") center center / cover no-repeat fixed;
     font-family: Poppins;
+    cursor: default;
 }
 
 .container {
@@ -17,8 +22,17 @@ body {
 
 h1 {
     color: #fff;
-    font-size: 5.5vw;
+    font-size: 5vw;
     font-weight: 500;
+}
+
+h2 {
+    color: #fff;
+    font-size:2.5vh;
+}
+
+p {
+    color: #fff;
 }
 
 span {
@@ -31,7 +45,8 @@ span {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(1, 149, 255, 1);
+    background: rgba(1, 149, 255, 0.5);
+    backdrop-filter: blur(10px);
     z-index: 999999;
     color: white;
 }
@@ -90,21 +105,21 @@ a {
 }
 
 .home-logo {
-    max-height: 10vh;
+    max-height: 15vh;
     width: auto;
 }
 
-.home {
+.section {
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    height: 75vh;
+    height: 100vh;
     gap: 0;
 }
 
 .home-text {
-    font-size: 2.5vh;
+    font-size: 3.5vh;
     color: #091723;
     text-align: center;
 }
@@ -114,4 +129,94 @@ a {
     margin: 0 auto;
     width: 95vw;
     height: auto;
+    backdrop-filter: blur(10px);
+}
+
+.section-white {
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+}
+
+.container.footer {
+    background-color: rgba(9, 23, 35, 0.5);
+    backdrop-filter: blur(10px);
+    min-height: 35vh;
+    color: white;
+}
+
+.game-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    min-height: 40vh;
+    height: 40vh;
+    min-width: 30vh;
+    max-width: 30vh;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    margin: 10px;   
+    gap: 10px;
+    transition: 0.125s;
+}
+
+.game-card:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+td {
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+tr {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-content {
+    font-size: 1.5vh;
+}
+
+.button {
+    position: absolute;
+    padding: 8px 32px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: default;
+    transition: 0.25s;
+}
+
+.button.card-content {
+    position: absolute;
+    padding: 8px 64px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: default;
+    transition: 0.25s;
+    
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.35);
 }

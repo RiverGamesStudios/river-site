@@ -146,7 +146,7 @@ a {
     background-color: rgba(9, 23, 35, 0.5);
     backdrop-filter: blur(10px);
     min-height: 25vh;
-    max-height: 35vh;
+    max-height: 75vh;
     color: white;
 }
 

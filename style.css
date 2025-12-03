@@ -209,7 +209,7 @@ tr {
 
 .button.card-content {
     position: absolute;
-    padding: 8px 64px;
+    padding: 8px 16px;
     background: rgba(255, 255, 255, 0.25);
     color: white;
     border-radius: 6px;

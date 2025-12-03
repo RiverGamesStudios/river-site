@@ -125,7 +125,7 @@ a {
 
 .home-text {
     font-size: 3.5vh;
-    color: #091723;
+    color: /* #091723; */ #fff;
     text-align: center;
 }
 
@@ -145,7 +145,8 @@ a {
 .container.footer {
     background-color: rgba(9, 23, 35, 0.5);
     backdrop-filter: blur(10px);
-    min-height: 35vh;
+    min-height: 25vh;
+    max-height: 35vh;
     color: white;
 }
 

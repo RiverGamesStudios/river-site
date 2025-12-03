@@ -148,6 +148,8 @@ a {
     min-height: 25vh;
     max-height: 75vh;
     color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .game-card {
